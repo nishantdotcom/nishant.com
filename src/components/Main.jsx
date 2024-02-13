@@ -19,8 +19,8 @@ export default function Main() {
           I am a Full-Stack developer.
         </div>
         <div className="px-12 py-3 justify-center font-sans      text-slate-400">
-          I'm a software developer specialized in building web apps. Currently
-          I'm working at Helper4u as a Full-Stack Developer.
+          I&apos;m a software developer specialized in building web apps.
+          Currently I&apos;m working at Helper4u as a Full-Stack Developer.
         </div>
         <div className=" border border-white   text-center m-10 "></div>
       </section>
