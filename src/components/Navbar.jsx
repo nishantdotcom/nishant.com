@@ -1,7 +1,8 @@
 "use Client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { clsx } from "clsx";
 
 function Navbar() {
   const [isTrue, setisTrue] = useState(0);
@@ -44,7 +45,7 @@ function Navbar() {
           <div className=" hidden  md:flex w-4/5 justify-end px-[4vw] ">
             <div className="   flex font-mono p-6 gap-x-10">
               {details.map((data, index) => (
-                <>
+                <div key={index}>
                   <div className=" flex mt-2" key={index}>
                     <div className=" text-sm px-2 text-[#22D3EE]" key={index}>
                       {data.id}
@@ -56,7 +57,7 @@ function Navbar() {
                       {data.specs}
                     </div>
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </div>
@@ -69,12 +70,15 @@ function Navbar() {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="40"
-              height="40"
-              viewBox="0 0 32 32"
-              className=" text-white"
+              width="30"
+              height="30"
+              viewBox="0,0,256,256"
             >
-              <path d="M 4 7 L 4 9 L 28 9 L 28 7 L 4 7 z M 4 15 L 4 17 L 28 17 L 28 15 L 4 15 z M 4 23 L 4 25 L 28 25 L 28 23 L 4 23 z"></path>
+              <g fill="#ffffff">
+                <g transform="scale(5.12,5.12)">
+                  <path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path>
+                </g>
+              </g>
             </svg>
           </div>
         </div>
@@ -88,12 +92,12 @@ function Navbar() {
               <div class="w-40 bg-[#0A192F]  p-2">
                 <ul>
                   {details.map((data, index) => (
-                    <>
+                    <div key={index}>
                       <li
                         className="mb-2 justify-around pt-8 hover:cursor-pointer"
                         key={index}
                       >
-                        <div className=" flex ">
+                        <div className=" flex " key={index}>
                           <div
                             className="text-sm px-2 text-[#22D3EE]"
                             key={index}
@@ -108,7 +112,7 @@ function Navbar() {
                           </div>
                         </div>
                       </li>
-                    </>
+                    </div>
                   ))}
                 </ul>
               </div>
