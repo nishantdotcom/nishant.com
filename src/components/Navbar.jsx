@@ -88,7 +88,7 @@ function Navbar() {
           </>
         ) : (
           <motion.div initial="hidden" animate="visible" variants={variants}>
-            <div class=" flex h-screen justify-end shadow-2xl shadow-indigo-500/50">
+            <div class=" flex   h-screen  justify-end shadow-2xl shadow-indigo-500/50">
               <div class="w-40 bg-[#0A192F]  p-2">
                 <ul>
                   {details.map((data, index) => (

@@ -2,12 +2,17 @@
 
 import Navbar from "@/components/Navbar";
 import Main from "@/components/Main";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Main />
+      <div className=" bg-[#0A192F]">
+        <Main />
+
+        <Skills />
+      </div>
     </>
   );
 }

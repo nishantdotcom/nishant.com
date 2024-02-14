@@ -8,9 +8,9 @@ export default function Main() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.9, ease: "easeInOut" }}
     >
-      <section className="bg-[#0A192F] flex flex-col relative pt-10">
+      <section className="bg-[#0A192F] flex flex-col relative lg:pt-40 md:pt-40 sm:p-100 ">
         <div className="lg:flex md:flex">
-          <div>
+          <div className=" sm: pt-10 xs:pt-10">
             <div className=" px-12 text-[#22D3EE]  tracking-wider">
               Hi, my name is
             </div>
@@ -29,7 +29,7 @@ export default function Main() {
             <div className="absolute top-0 left-0 h-48 w-48 xl:h-72 xl:w-72 rounded-full bg-primary/[0.2] hover:opacity-0 z-20"></div>
             <div className="transition-all duration-300 absolute h-48 w-48 xl:h-72 xl:w-72 rounded-full border  border-primary z-0 top-3 left-3"></div>
             <img
-              src="/nishant1.jpeg"
+              src="./nishant1.jpeg"
               alt="nishant.jpeg"
               className="none h-48 w-48 xl:h-72 xl:w-72 rounded-full z-10 grayscale"
             />
