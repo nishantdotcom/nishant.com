@@ -49,11 +49,15 @@ function Skills() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.9, ease: "easeInOut" }}
+        className="bg-[#0A192F]"
       >
         <div className="bg-[rgb(10,25,47)] flex pl-10 pt-4 justify-start pb-10 ">
           <div className=" flex gap-x-2">
             <div className="text-[#22D3EE] text-xl font-bold pt-3"> 01. </div>
-            <div className=" text-slate-400 text-4xl font-bold"> My Skills</div>
+            <div className=" text-slate-400 text-4xl font-bold">
+              {" "}
+              My Skillss
+            </div>
           </div>
         </div>
         <div className="   sm: pl-10 sm:pr-10 transition-all ease-in-out duration-1000 flex flex-wrap place-content-center mt-10 gap-6 sm:p-4">

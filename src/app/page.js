@@ -7,12 +7,16 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <div className=" bg-[#0A192F]">
-        <Main />
+      <div className=" bg-[#0A192F] w-full h-full">
+        <Navbar />
 
+        <Main />
         <Skills />
       </div>
+
+      {/* <div className=" w-full h-full flex align-middle justify-center pt-10">
+        <Animation />
+      </div> */}
     </>
   );
 }
