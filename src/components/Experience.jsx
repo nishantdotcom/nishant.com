@@ -37,7 +37,7 @@ function Experience() {
       <div className=" flex gap-x-2 p-8 ">
         <div className="text-[#22D3EE] text-xl font-bold pt-2 md:pt-6">02.</div>
         <div className="  tracking-wider  lg:py-3 justify-center  font-sans  text-3xl  lg:text-4xl  font-bold word-break  text-slate-400">
-          Where I've Worked
+          Where I&apos;ve Worked
         </div>
       </div>
       <div className=" p-2 ">
