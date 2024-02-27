@@ -12,7 +12,7 @@ export default function Main() {
         <div className="lg:flex md:flex">
           <div className=" sm: pt-10 xs:pt-10">
             <motion.div
-              className=" px-12 text-[#22D3EE]  tracking-wider"
+              className=" px-12 text-[#22D3EE]  "
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 5, opacity: 1 }}
               transition={{
@@ -24,12 +24,12 @@ export default function Main() {
             >
               Hi, my name is
             </motion.div>
-            {/* <div className=" px-12 text-[#22D3EE]  tracking-wider">
+            {/* <div className=" px-12 text-[#22D3EE]  ">
               {" "}
               Hi, my name is
             </div> */}
             <motion.div
-              className="  tracking-wider px-12 py-4 lg:py-3 justify-center  font-sans  text-5xl  lg:text-8xl  font-bold word-break   text-slate-200"
+              className="   px-12 py-4 lg:py-3 justify-center  font-sans  text-5xl  lg:text-8xl  font-bold word-break   text-slate-200"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 5, opacity: 1 }}
               transition={{
@@ -43,7 +43,7 @@ export default function Main() {
             </motion.div>
 
             <motion.div
-              className=" tracking-wider px-12 lg:py-3 justify-center  font-sans  text-3xl  lg:text-4xl  font-bold word-break   text-slate-400"
+              className="  px-12 lg:py-3 justify-center  font-sans  text-3xl  lg:text-4xl  font-bold word-break   text-slate-400"
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 5, opacity: 1 }}
               transition={{
@@ -57,7 +57,7 @@ export default function Main() {
             </motion.div>
 
             <motion.div
-              className=" px-12 py-3 justify-center font-sans      text-slate-400"
+              className=" px-12 py-3 justify-center font-sans text-slate-400"
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 5, opacity: 1 }}
               transition={{

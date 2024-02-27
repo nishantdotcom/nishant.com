@@ -36,7 +36,7 @@ function Navbar() {
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         <div className=" bg-[#0A192F] flex shadow-2xl w-auto">
           <div className="font-mono w-1/5   flex justify-start  font-bold text-3xl text-[#22D3EE] p-6  ml-10px">
