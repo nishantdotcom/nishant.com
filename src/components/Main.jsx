@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import nishant1 from "../images/nishant1.jpeg";
 
 export default function Main() {
   return (
@@ -76,7 +77,7 @@ export default function Main() {
             <div className="absolute top-0 left-0 h-48 w-48 xl:h-72 xl:w-72 rounded-full bg-primary/[0.2] hover:opacity-0 z-20"></div>
             <div className="transition-all duration-300 absolute h-48 w-48 xl:h-72 xl:w-72 rounded-full border  border-primary z-0 top-3 left-3"></div>
             <img
-              src="./nishant1.jpeg"
+              src={nishant1.src}
               alt="nishant.jpeg"
               className="none h-48 w-48 xl:h-72 xl:w-72 rounded-full z-10 grayscale"
             />
