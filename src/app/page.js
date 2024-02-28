@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Main from "@/components/Main";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Main />
         <Skills />
         <Experience />
+        <Projects />
       </div>
 
       {/* <div className=" w-full h-full flex align-middle justify-center pt-10">
