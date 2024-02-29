@@ -20,11 +20,19 @@ function Contact() {
             I&apos;m looking for new opportunities. If you have any, please feel
             free to contact me. I&apos;ll get back to you as soon as possible.
           </div>
-          <div className=" flex justify-center p-8">
-            <button className="border border-slate-400 p-4 rounded-xl   text-[#22D3EE]">
-              Let&apos;s Connect 🖐️
+          <div className=" flex justify-center  ">
+            <button className="border-2 border-slate-400  pl-4 pr-4 pt-2 pb-2  rounded-xl   text-[#22D3EE] flex gap-x-2">
+              <div className="  pt-4 font-sans ">Let&apos;s Connect </div>
+              <div className="">
+                <iframe
+                  src="https://giphy.com/embed/l378Bu88CUbQyFniM"
+                  width="50"
+                  height="50"
+                ></iframe>
+              </div>
             </button>
           </div>
+          <div></div>
         </div>
         <div className="lg:w-[25%] w-[10%] "></div>
       </div>
