@@ -93,13 +93,13 @@ function Navbar() {
           </>
         ) : (
           <motion.div initial="hidden" animate="visible" variants={variants}>
-            <div class=" flex   h-screen  justify-end shadow-2xl shadow-indigo-500/50">
-              <div class="w-40 bg-[#0A192F]  p-2">
-                <ul>
+            <div class=" fixed top-0 right-0 z-40 w-100 h-screen  overflow-y-auto bg-[#0A192F]  ">
+              <div class="w-40  bg-[#0A192F] p-2">
+                <ul className="pt-10">
                   {details.map((data, index) => (
                     <div key={index}>
                       <li
-                        className="mb-2 justify-around pt-8 hover:cursor-pointer"
+                        className="mb-2 justify-around p-4 hover:cursor-pointer"
                         key={index}
                       >
                         <div className=" flex " key={index}>
@@ -113,7 +113,7 @@ function Navbar() {
                             className="text-sm px-2 text-white hover:text-[#22D3EE]"
                             key={index}
                           >
-                            {data.specs}
+                            <Link href={data.getLink}>{data.specs}</Link>
                           </div>
                         </div>
                       </li>
