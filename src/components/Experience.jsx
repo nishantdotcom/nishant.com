@@ -9,7 +9,7 @@ function Experience() {
       id: 1,
       name: "Helper4u",
       role: "Software Developer",
-      time: "2022 - Present",
+      time: "2023 - Present",
       description: [
         "Developed the web app using React.js, Redux, and Tailwind CSS.",
         "Developed the backend of web app using Nodejs, Express and SQL.",
@@ -18,10 +18,14 @@ function Experience() {
     },
     {
       id: 2,
-      name: "XYZ",
+      name: "Aspirehive",
       role: "Software Developer",
-      time: "2021 - 2022",
-      description: ["Test.", "Test", "Test"],
+      time: "2022 - 2023",
+      description: [
+        "Developed the Frontend using React.js and Tailwind CSS. ",
+        "Developed the backend of web app using Nodejs, Express and SQL",
+        "Sole developer, responsible for all aspects of the projects",
+      ],
     },
   ];
 

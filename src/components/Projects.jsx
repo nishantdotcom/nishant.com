@@ -41,14 +41,14 @@ function Projects() {
           console.log(item.image.src);
           return (
             <div
-              className="md:flex  xl:flex lg:flex  justify-center gap-x-10 p-6"
+              className="md:flex  xl:flex lg:flex  justify-center gap-x-10 p-6 "
               key={index}
             >
               <div className="md:w-[50%] xl:w-[50%]  rounded-xl ">
                 <img
                   src={item.image.src}
                   alt={item.alt}
-                  className=" rounded-2xl border border-slate-400   xl:w-[80%] xl:object-cover "
+                  className=" rounded-2xl border border-slate-400   xl:w-[80%] xl:object-cover  opacity-60 hover:opacity-100"
                 />
               </div>
               <div className="md:w-[50%] xl:w-[50%]  sm:pt-4 ">
@@ -68,7 +68,7 @@ function Projects() {
                   {item.project_desc}
                 </div>
 
-                <div className="  flex gap-x-4 pt-2  p-4 justify-around">
+                <div className="  flex gap-x-4 pt-2 justify-around">
                   {item.tech_stack.map((x, index) => {
                     return (
                       <div
