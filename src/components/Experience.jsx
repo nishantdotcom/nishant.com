@@ -12,8 +12,8 @@ function Experience() {
       time: "2023 - Present",
       description: [
         "Developed the web app using React.js, Redux, and Tailwind CSS.",
-        "Developed the backend of web app using Nodejs, Express and SQL.",
         "Integrate Google geocode Api for accurate Co-ordinate search. ",
+        "Developed the backend of web app using Nodejs,Express and SQL.",
       ],
     },
     {
@@ -23,8 +23,8 @@ function Experience() {
       time: "2022 - 2023",
       description: [
         "Developed the Frontend using React.js and Tailwind CSS. ",
-        "Developed the backend of web app using Nodejs, Express and SQL",
         "Sole developer, responsible for all aspects of the projects",
+        "Developed the backend of web app using Nodejs,Express and SQL",
       ],
     },
   ];
@@ -37,7 +37,7 @@ function Experience() {
   }
 
   return (
-    <motion.div className="  ">
+    <motion.div className="  " id="Experience">
       <div className=" flex gap-x-2 p-8 ">
         <div className="text-[#22D3EE] text-xl font-bold pt-2 md:pt-6">02.</div>
         <div className="  tracking-wider  lg:py-3 justify-center  font-sans  text-3xl  lg:text-4xl  font-bold word-break  text-slate-400">
@@ -62,32 +62,34 @@ function Experience() {
       <div>
         {dataId && (
           <>
-            <div className=" flex">
-              <div className="w-[5%] "> </div>
-              <div className="w-[90%] m-4  ">
-                <div className=" text-slate-400  font-sans  text-2xl font-semibold  flex flex-wrap">
+            <div className=" flex ">
+              <div className=" lg:w-[25%] w-[5%] "> </div>
+              <div className=" lg:w-[50%] sm:w-[90%] m-4   ">
+                <div className=" text-slate-400  font-sans  text-2xl font-semibold  lg:flex ">
                   {` Software Developer `}
-                  <div className="text-[#22D3EE] pl-1">{`@${dataId.name}`}</div>
+                  <div className="text-[#22D3EE] pl-1 flex ">{`@${dataId.name}`}</div>
                 </div>
-                <div className=" text-slate-400 ">{dataId.time}</div>
+                <div className=" text-slate-400  ">{dataId.time}</div>
               </div>
-              <div className="w-[5%] "> </div>
+              <div className="w-[25%] sm:w-[5%] "> </div>
             </div>
-            <div className=" flex">
-              <div className="w-[5%] "> </div>
-              <div className=" p-3 w-[90%] justify-center ">
+            <div className=" flex  ">
+              <div className="lg:w-[25%] sm:w-[5%]  "> </div>
+              <div className=" p-3 m-4 lg:w-[50%] sm:w-[90%] ">
                 {dataId.description.map((data, index) => {
                   return (
-                    <div className=" flex gap-x-4 pt-1" key={index}>
-                      <div className="py-1">
-                        <FaCaretRight className=" text-[#22D3EE]" />
+                    <div className="   gap-x-2 pt-1   " key={index}>
+                      <div className="flex ">
+                        <div className="py-1  ">
+                          <FaCaretRight className=" text-[#22D3EE]" />
+                        </div>
+                        <div className="text-slate-400   ">{data}</div>
                       </div>
-                      <div className="text-slate-400 ">{data}</div>
                     </div>
                   );
                 })}
               </div>
-              <div className="w-[5%] "> </div>
+              <div className="lg:w-[25%] sm:w-[5%]  "> </div>
             </div>
           </>
         )}

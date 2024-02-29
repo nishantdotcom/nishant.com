@@ -3,16 +3,21 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { clsx } from "clsx";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import Skills from "./Skills";
+import Contact from "./Contact";
+import Link from "next/link";
 
 function Navbar() {
   const [isTrue, setisTrue] = useState(0);
   const [isSidebar, setisSidebar] = useState(1);
 
   const details = [
-    { id: "01.", specs: "Skills" },
-    { id: "02.", specs: "Projects" },
-    { id: "03.", specs: "Experiences" },
-    { id: "04.", specs: "Contact" },
+    { id: "01.", specs: "Skills", getLink: "#Skills" },
+    { id: "02.", specs: "Projects", getLink: "#Projects" },
+    { id: "03.", specs: "Experiences", getLink: "#Experience" },
+    { id: "04.", specs: "Contact", getLink: "#Contact" },
   ];
 
   const variants = {
@@ -54,7 +59,7 @@ function Navbar() {
                       className=" text-white hover:text-[#22D3EE] hover:cursor-pointer text-sm"
                       key={index}
                     >
-                      {data.specs}
+                      <Link href={data.getLink}>{data.specs}</Link>
                     </div>
                   </div>
                 </div>

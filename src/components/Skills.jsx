@@ -50,6 +50,7 @@ function Skills() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.9, ease: "easeInOut" }}
         className="bg-[#0A192F]"
+        id="Skills"
       >
         <div className="bg-[rgb(10,25,47)] flex pl-10 pt-4 justify-start pb-10 ">
           <div className=" flex gap-x-2">

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <motion.div>
+    <motion.div id="Contact">
       <div className=" flex">
         <div className="lg:w-[25%] w-[10%] "> </div>
         <div className="lg:w-[50%] w-[80%]   p-4 m-2">
